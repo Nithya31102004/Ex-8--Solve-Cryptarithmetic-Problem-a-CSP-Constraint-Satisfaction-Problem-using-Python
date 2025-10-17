@@ -1,11 +1,11 @@
 <h1>ExpNo 8 : Solve Cryptarithmetic Problem,a CSP(Constraint Satisfaction Problem) using Python</h1> 
 <h3>Name: HANIEL REENA D R        </h3>
 <h3>Register Number: 2305001008   </h3>
-<H3>Aim:</H3>
+<H3>AIM:</H3>
 <p>
     To solve Cryptarithmetic Problem,a CSP(Constraint Satisfaction Problem) using Python
 </p>
-<h3>Procedure:</h3>
+<h3>PROCEDURE:</h3>
 Input and Output
 <br>Input:
 This algorithm will take three words.
@@ -83,42 +83,41 @@ MONEY = 10652<br>
 ```Python
 from itertools import permutations
 
-def solve_base_ball_games():
-    letters = ('B','A','S','E','L','G','M')
+def solve_cryptarithmetic():
+    letters = ('T', 'H', 'I', 'S', 'A', 'R', 'D')
     for perm in permutations(range(10), len(letters)):
-        B,A,S,E,L,G,M = perm
-        # Leading letters can't be zero
-        if B == 0 or G == 0:
+        T, H, I, S, A, R, D = perm
+
+        # Leading letters cannot be zero
+        if T == 0 or H == 0:
             continue
 
-        BASE = 1000*B + 100*A + 10*S + E
-        BALL = 1000*B + 100*A + 10*L + L
-        GAMES = 10000*G + 1000*A + 100*M + 10*E + S
+        THIS = 1000 * T + 100 * H + 10 * I + S
+        IS = 10 * I + S
+        HARD = 1000 * H + 100 * A + 10 * R + D
 
-        if BASE + BALL == GAMES:
-            return {
-                'mapping': {'B':B,'A':A,'S':S,'E':E,'L':L,'G':G,'M':M},
-                'BASE': BASE,
-                'BALL': BALL,
-                'GAMES': GAMES
-            }
+        if THIS + IS == HARD:
+            return THIS, IS, HARD, {'T':T, 'H':H, 'I':I, 'S':S, 'A':A, 'R':R, 'D':D}
+
     return None
 
-sol = solve_base_ball_games()
-if sol:
-    print("Mapping:", sol['mapping'])
-    print(f"BASE  = {sol['BASE']}")
-    print(f"BALL  = {sol['BALL']}")
-    print(f"GAMES = {sol['GAMES']}")
+solution = solve_cryptarithmetic()
+
+if solution:
+    THIS, IS, HARD, mapping = solution
+    print("Mapping:", mapping)
+    print(f"THIS = {THIS}")
+    print(f"IS   = {IS}")
+    print(f"HARD = {HARD}")
 else:
     print("No solution found.")
 
+
 ```
 
-## output
+## OUTPUT
 
-<img width="500" height="115" alt="image" src="https://github.com/user-attachments/assets/f365caee-9726-4d24-920a-e3f2c424de6e" />
-
+<img width="641" height="103" alt="image" src="https://github.com/user-attachments/assets/e84c72e4-67c7-494a-a591-c568ae7780cc" />
 
 
 <hr>
