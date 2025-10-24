@@ -1,6 +1,6 @@
 <h1>ExpNo 8 : Solve Cryptarithmetic Problem,a CSP(Constraint Satisfaction Problem) using Python</h1> 
-<h3>Name: HANIEL REENA D R        </h3>
-<h3>Register Number: 2305001008   </h3>
+<h3>Name: NITHYA T       </h3>
+<h3>Register Number: 2305001023   </h3>
 <H3>AIM:</H3>
 <p>
     To solve Cryptarithmetic Problem,a CSP(Constraint Satisfaction Problem) using Python
@@ -122,4 +122,4 @@ else:
 
 <hr>
 <h2>Result:</h2>
-<p> Thus a Cryptarithmetic Problem was solved using Python successfully</p>
+<p> Thus a Cryptarithmetic Problem was solved using Python successfully.</p>
